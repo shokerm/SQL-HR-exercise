@@ -25,7 +25,7 @@ where e.first_name like '%z%'
 
 --ex6
 select e.first_name,e.last_name,d.department_id,d.department_name from departments d
-join employees e on d.department_id = e.department_id
+left join employees e on d.department_id = e.department_id
 
 --ex7
 select e.first_name,e.last_name,e.salary from employees e
